@@ -5,17 +5,16 @@
 	 	  <p>Cheater Site</p>
 	  </header>
 	  <div class="topnav" id="myTopNav">
-	    <a onclick="blank()" class="gb">about:blank</a>
 		  <a href="#home" class="bookmarks">Home</a>
 		  <a href="#games" class="bookmarks">Games</a>
-		  <a href="#apps" class="bookmarks">Apps</a>
+		  <a onclick="blank()" class="gb">about:blank</a>
 	  </div>
 	  <br>
 	  <div class="topnav">
 		  <a onclick="game('plexy')" class="bookmarks">Plexygames</a>
 		  <a onclick="game('hypackel')" class="bookmarks">hypackel</a>
 		  <a onclick="game('code')" class="bookmarks">SANS FIGHT</a>
-		  <a onclick="game('code')" class="bookmarks">Cookie Clicker</a>
+		  <a onclick="game('cookie')" class="bookmarks">Cookie Clicker</a>
 	  </div>
 	  <hr id="home">
 	  <div class="games">
@@ -53,6 +52,9 @@
 	    else if (id == "code") {
 	      document.getElementById("game").src = "https://gotoanddie.github.io/c2-sans-fight/";
 	    }
+		else if (id == "cookie") {
+		document.getElementById("game").src = "https://orteil.dashnet.org/cookieclicker/";
+		}
     }
     function blank() {
       var urlobj = new window.URL(window.location.href);
